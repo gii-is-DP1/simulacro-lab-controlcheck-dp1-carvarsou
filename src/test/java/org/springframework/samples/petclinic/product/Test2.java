@@ -44,7 +44,7 @@ public class Test2 {
     
     public void repositoryContainsMethod(){
         if(pr!=null){
-            List<ProductType> pts=pr.findAllProductTypes();
+            List<ProductType> pts= pr.findAllProductTypes();
             assertNotNull(pts,"We can not query all the products through the repository");
         }else
             fail("The repository was not injected into the tests, its autowired value was null");
